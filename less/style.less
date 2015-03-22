@@ -1,0 +1,49 @@
+@import "variables.less";
+
+@import "mixin.less";
+
+@import "layout.less";
+
+@import "responsive.less";
+
+@import "animation.less";
+
+
+
+.nav-menu{
+	ul {
+		margin: 0; padding: 0; display: inline-block;
+	}
+	li {
+		margin:0; padding: 0; display: inline-block;
+	}
+	a {
+		display: inline-block; padding: 4px 8px;
+		&:hover{ }
+	}
+}
+
+.sandwitch{
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	background-image: url(../img/sandwitch.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 80%;
+}
+ 
+
+.slider{
+	margin: 0 75px;
+}
+.owl-prev { 
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.owl-next { 
+	position: absolute;
+	top: 0;
+	right: 0;
+}

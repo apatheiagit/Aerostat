@@ -1,0 +1,39 @@
+
+.balloon{
+	position: absolute;
+	top: 50px;	
+	left: 20px;
+	display: block;
+}
+#balloon1{
+	top: 50px;
+	left: 20px;
+	-webkit-animation: fly1 10s linear 2s infinite alternate;
+	animation: fly1 10s linear 2s infinite alternate;
+}
+#balloon2{
+	top: 80px;
+	left: 40px;
+	-webkit-animation: fly2 5s linear 2s infinite alternate;
+	animation: fly2 5s linear 2s infinite alternate;
+}
+@-webkit-keyframes fly1{	
+	0% { left: -5%; top: 50px;}
+	50% { left: 40%; top: 30px;}
+	100% {left: 100%; top: 55px;}
+}
+@keyframes fly1{	
+	0% { left: -5%; top: 50px;}
+	50% { left: 40%; top: 30px;}
+	100% {left: 100%; top: 55px;}
+}
+@-webkit-keyframes fly2{	
+	0% { left: -5%; top: 50px;}
+	50% { left: 40%; top: 30px;}
+	100% {left: 100%; top: 55px;}
+}
+@keyframes fly2{	
+	0% { left: -15%; top: 80px;}
+	50% { left: 60%; top: 30px;}
+	100% {left: 100%; top: 85px;}
+}
