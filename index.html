@@ -130,9 +130,9 @@
 <!-- Calculator - section -->
   <section class="somit calculator">
     <div class="container">
+      <h2 class="underline">Расчитать стоимость</h2>
       <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <h2 class="underline">Расчитать стоимость</h2>
+        <div class="col-sm-12 col-md-6">          
           <div class="calculator__text hidden-xs">
             <p>Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
             <p>Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох». </p>
@@ -141,34 +141,44 @@
         </div>
         <div class="col-sm-12 col-md-6 calculator__wrap">
           <div class="calculator__form">
-            <form name="calculator" action="#">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6">Маршрут полета:</div>
-              <div class="col-xs-12 col-sm-6">
-                <select name="program" id="program">
-                  <option value=""></option>
-                  <option value="">Вдоль реки</option>
-                </select>
-              </div>
-              <div class="col-xs-12 col-sm-6">Количество человек:</div>
-              <div class="col-xs-12 col-sm-6">
-                <select name="count" id="count">
-                  <option value=""></option>
-                  <option value="">1</option>
-                </select>
-              </div>
-              <div class="col-xs-12 col-sm-6">Имя и фамилия</div>
-              <div class="col-xs-12 col-sm-6">
-                <input type="text" value="" name="name">
-              </div>
-              <div class="col-xs-12 col-sm-6">Телефон</div>
-              <div class="col-xs-12 col-sm-6">
-                <input name="phone" type="text" value="">
-              </div>
-              <div class="col-xs-12 col-sm-12 calculator__bottom">
-                <div class="pull-left"><span class="hidden-xs calculator__cost-label">Стоимость: </span><span class="calculator__cost">9000 P</span></div>
-                <div class="pull-right"><input type="submit" value="Полетели!"></div>
-              </div>
+            <form name="calculator" class="form form-horizontal" action="#">
+              <div class="row">              
+                <div class="form-group">
+                  <div class="col-xs-12 col-sm-4 col-sm-offset-1"><label class="control-label">Маршрут полета:</label></div>
+                  <div class="col-xs-12 col-sm-6">
+                    <select name="program" id="program" class="form-control">
+                      <option value=""></option>
+                      <option value="">Вдоль реки</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">  
+                  <div class="col-xs-12 col-sm-4 col-sm-offset-1"><label class="control-label">Количество&nbsp;человек:</label></div>
+                  <div class="col-xs-12 col-sm-6">
+                    <select name="count" id="count" class="form-control">
+                      <option value=""></option>
+                      <option value="">1</option>
+                    </select>
+                  </div>                  
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-12 col-sm-4 col-sm-offset-1"><label class="control-label">Имя и фамилия</label></div>
+                  <div class="col-xs-12 col-sm-6">
+                    <input type="text" value="" name="name" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-12 col-sm-4 col-sm-offset-1"><label class="control-label">Телефон</label></div>
+                  <div class="col-xs-12 col-sm-6">
+                    <input name="phone" type="text" value="" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-12 col-sm-10 col-sm-offset-1 calculator__bottom">
+                    <div class="pull-left"><span class="hidden-xs calculator__cost-label"><label class="control-label">Стоимость: </span><span class="calculator__cost">9000 P</span></div>
+                    <div class="pull-right"><input class="btn btn-primary" type="submit" value="Полетели!"></div>
+                  </div>
+                </div>
               </div>
               </form>            
           </div>
@@ -177,6 +187,46 @@
     </div>
   </section>
 <!-- /Calculator - section -->
+
+<!-- Info - section -->
+  <div class="info-section somit">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <h2 class="underline">Способы оплаты</h2>
+          <div id="tabs">
+            <ul class="nav nav-tabs">
+              <li><a href="#tabs-1">Наличными</a></li>
+              <li><a href="#tabs-2">Курьером</a></li>
+              <li><a href="#tabs-3">Картой</a></li>
+            </ul>
+            <div id="tabs-1">
+            <p>Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
+              <ul>
+                <li>по телефону: +7 (812) 640-19-39,</li>
+                <li>или по почте: mnebyvnebo@gmail.com</li>
+              </ul>
+              <p>Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
+            </div>
+          </div>
+        </div>
+        <div class="hidden-xs col-sm-12 col-md-6">
+          <h2 class="underline">Частые вопросы</h2>
+          <div class="accordion">
+            <h4 class="accordion__title open">Любопытство – вот, что заставляет нас двигаться</h4>
+            <div class="accordion__text">
+              <p>Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы</p>
+            </div>
+            <h4 class="accordion__title">Что если мы улетим не в ту сторону?</h4>
+            <h4 class="accordion__title">Что делать, если в полете станет плохо?</h4>
+            <h4 class="accordion__title">А полет – это действительно так здорово?</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- /Info - section -->
 
 <!-- Footer (dark menu) -->
   <div class="somit somit-dark">
