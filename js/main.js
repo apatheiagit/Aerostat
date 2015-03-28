@@ -27,7 +27,16 @@ $(document).ready(function(){
         }
       }
     });
-
+    $('#tabs ul li a').click(function(){
+        $('.tabs-text').addClass('hidden');
+        $($(this).attr('href')).removeClass('hidden');        
+    });
+    $('.accordion__title').click(function(){
+      $('.accordion__title').removeClass('open');
+      $(this).addClass('open');
+      $('.accordion__text').addClass('hidden');
+      $(this).next('.accordion__text').removeClass('hidden');
+    });
 
 });
 

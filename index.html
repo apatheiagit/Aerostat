@@ -9,7 +9,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="js/plugins/owl/owl.carousel.min.js"></script>
   <script src="js/live.js"></script>
-   <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
   <script>
     if (!window.jQuery) {
         document.write('<script src="js/jquery-2.1.3.min.js"><\/script>');
@@ -194,13 +194,13 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6">
           <h2 class="underline">Способы оплаты</h2>
-          <div id="tabs">
+          <div id="tabs" class="tabs">
             <ul class="nav nav-tabs">
               <li><a href="#tabs-1">Наличными</a></li>
               <li><a href="#tabs-2">Курьером</a></li>
               <li><a href="#tabs-3">Картой</a></li>
             </ul>
-            <div id="tabs-1">
+            <div id="tabs-1" class="tabs-text ">
             <p>Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
               <ul>
                 <li>по телефону: +7 (812) 640-19-39,</li>
@@ -208,25 +208,123 @@
               </ul>
               <p>Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
             </div>
+            <div id="tabs-2" class="tabs-text hidden">
+              <p>Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:</p>
+              <ul>
+                <li>по телефону: +7 (812) 640-19-39,</li>
+                <li>или по почте: mnebyvnebo@gmail.com</li>
+              </ul>
+              <p>Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
+            </div>
+            <div id="tabs-3" class="tabs-text hidden">
+              <p>В ближайшее время мы добавим возможность оплаты с помощью кредитной карты VISA и MasterCard. Пока просим вас использовать наличные деньги для оплаты услуг.</p>
+            </div>
           </div>
         </div>
         <div class="hidden-xs col-sm-12 col-md-6">
           <h2 class="underline">Частые вопросы</h2>
-          <div class="accordion">
+          <div id="accordion" class="accordion">
             <h4 class="accordion__title open">Любопытство – вот, что заставляет нас двигаться</h4>
             <div class="accordion__text">
               <p>Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы</p>
             </div>
             <h4 class="accordion__title">Что если мы улетим не в ту сторону?</h4>
+            <div class="accordion__text hidden">
+              <p>Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками.</p>
+            </div>
             <h4 class="accordion__title">Что делать, если в полете станет плохо?</h4>
+            <div class="accordion__text hidden">
+              <p>В ближайшее время мы добавим возможность оплаты с помощью кредитной карты VISA и MasterCard. Пока просим вас использовать наличные деньги для оплаты услуг.</p>
+            </div>
             <h4 class="accordion__title">А полет – это действительно так здорово?</h4>
+            <div class="accordion__text hidden">
+              <p>Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 <!-- /Info - section -->
+
+<!-- Advantage - section -->
+  <div class="advantage-section somit">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3">
+          <div class="row">
+            <div class="col-xs-4 col-sm-12">
+              <div class="img-circle img-responsive advantage__number text-center">700</div>
+            </div>
+            <div class="col-xs-8 col-sm-12">
+              <div class="advantage__title">Полетов в год</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="row">
+            <div class="col-xs-4 col-sm-12">
+              <div class="img-circle img-responsive advantage__number text-center">3000</div>
+            </div>
+            <div class="col-xs-8 col-sm-12">
+              <div class="advantage__title">Средняя дальность в метрах</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="row">
+            <div class="col-xs-4 col-sm-12">
+              <div class="img-circle img-responsive advantage__number text-center">3</div>
+            </div>
+            <div class="col-xs-8 col-sm-12">
+              <div class="advantage__title">Воздушных шара</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="row">
+            <div class="col-xs-4 col-sm-12">
+              <div class="img-circle img-responsive advantage__number text-center">12</div>
+            </div>
+            <div class="col-xs-8 col-sm-12">
+              <div class="advantage__title">Человек в команде</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- /Advantage - section -->
+
+<!-- Instructors - section -->
+  <div class="instructors-section somit">
+    <div class="container">
+      <h2 class="underline text-center">Команда инструкторов</h2>
+      <div class="row">
+        <div class="cos-xs-12 col-sm-6 col-md-3 instructors__item">
+          <img src="http://placehold.it/90x90" alt="" class="instructors__photo img-circle">
+          <div class="instructors__text"><a href="#" class="instructors__name">Мария Мариева</a><br>
+            <span class="instructors__post">Старший пилот</span></div>
+        </div>
+        <div class="cos-xs-12 col-sm-6 col-md-3 instructors__item">
+          <img src="http://placehold.it/90x90" alt="" class="instructors__photo img-circle">
+          <div class="instructors__text"><a href="#" class="instructors__name">Надежда Надеждова</a><br>
+            <span class="instructors__post">Второй пилот</span></div>
+        </div>
+        <div class="cos-xs-12 col-sm-6 col-md-3 instructors__item">
+          <img src="http://placehold.it/90x90" alt="" class="instructors__photo img-circle">
+          <div class="instructors__text"><a href="#" class="instructors__name">Ирина Иринова</a><br>
+            <span class="instructors__post">Авиадиспетчер</span></div>
+        </div>
+        <div class="cos-xs-12 col-sm-6 col-md-3 instructors__item">
+          <img src="http://placehold.it/90x90" alt="" class="instructors__photo img-circle">
+          <div class="instructors__text"><a href="#" class="instructors__name">Алена Аленова</a><br>
+            <span class="instructors__post">Авиатехник</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- /Instructors - section -->
 
 <!-- Footer (dark menu) -->
   <div class="somit somit-dark">
